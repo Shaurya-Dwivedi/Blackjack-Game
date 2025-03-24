@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    word-wrap: normal;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    color:rgba(255, 255, 255, 0.904);
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7G0YMc3sbjTyCU_9x9S7LU8sfQeaATCCDWA&s");
+    background-size:contain;
+    margin:32px auto;
+    padding: 8px 16px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00000000;
+}
+p{
+    margin:16px auto;
+    /* border: white 1px solid; */
+    /* line-height: 7vh; */
+    padding:.5vh 1vw; 
+    font-size:larger;
+}
+h1{
+    margin-bottom:32px;
+    color:goldenrod;
+}
+#message-el{
+    font-style: italic;
+    font-weight: bold;
+    font-size:4vh;
+}
+button{
+    width: 30vw;
+    height:7vh;
+    padding: 1vh 2vw;
+    margin:8px auto 0px auto;
+    border:none;
+    background-color:goldenrod;
+    color:rgb(1, 75, 1);
+    font-size:1.25rem;
+    font-weight: bold;
+    border-radius:0.5vw;
+    transition: border 0.1s;
+}
+button:hover{
+    opacity: 0.9;
+    cursor:pointer;
+    border:white solid 2px;
+}
+button:active{
+    opacity:0.8;
+    transform:scale(1.05,1.05);
+}
+.card-sum-wrapper{
+    display:flex;
+    /* border: white 1px solid; */
+    width: 30vw;
+    height: 20vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
