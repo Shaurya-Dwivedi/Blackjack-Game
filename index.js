@@ -25,6 +25,7 @@ function renderGame() {
     else if (sum === 21) {
         message = "You've got Blackjack!";
         hasBlackJack = true;
+        isAlive=false;
     } else {
         isAlive = false;
         message = "You're out of the game!";
@@ -45,10 +46,14 @@ function newCard() {
     }
 }
 
+function exitCasino(){
+    if(!isAlive&&hasBlackJack)
+    window.location.reload();
+}
 function startGame() {
     cards[0] = getRandomCard(), cards[1] = getRandomCard();
     sum = cards[0] + cards[1];
-    if (!isAlive) {
+    if (!isAlive&&!hasBlackJack) {
         // console.log(cards)
         for(let i=cards.length;i>2;i--){
             cards.pop();
